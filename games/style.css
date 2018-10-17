@@ -1,0 +1,21 @@
+a{
+  color: #555555;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.games{
+  padding: 10px;
+  border: 1px solid #555555;
+  border-radius: 20px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+}

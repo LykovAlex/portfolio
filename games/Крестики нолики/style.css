@@ -1,0 +1,27 @@
+#wrapper{
+  width:50%;
+  margin:0 auto;
+  text-align: center;
+}
+.boardPlay{
+  height: 500px;
+  border:1px solid;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.cell{
+  width:25%;
+  height: 125px;
+  border:1px solid;
+  box-sizing: border-box;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#button{
+  padding:5px 10px;
+  font-size: 16px;
+  width: 150px;
+}

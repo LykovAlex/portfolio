@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleCube.css">
+  </head>
+  <body>
+    <nav>
+
+      <div class="wrap">
+        <button id='startGame'>Новая игра</button>
+        <div class='changeLevel'>Cложность
+          <select class="selectLevel">
+            <option value="lite">Легкая</option>
+            <option selected value="normal">Средняя</option>
+            <option value="hard">Тяжелая</option>
+          </select>
+        </div>
+      </div>
+      <div class="rules"> Читать правила... </div>
+      <div class="readRules">
+        <p> Управление змейкой происходит стрелками на клавиатуре </p>
+        <p> Куб управляется клавишами: <br><br> W - вверх <br> S - вниз <br> A - влево <br> D - вправо  </p>
+        <p> Если змейка подбирает зелёную ячейку, то она растёт </p>
+        <p> Если змейка подбирает голубую ячейку, то она получает дополнительную жизнь </p>
+        <p> Если змейка подбирает красную ячейку и у неё нету дополнительной жизни,
+          то игра заканчивается, если есть то используется дополнительная жизнь и игра продолжается </p>
+        <p> Передвигаться по сторонам куба можно и нужно, но осторожно, по скольку не всегда можно перейти на
+          желаемую сторону, об этом будет предупреждать красная пунктирная линия</p>
+        <p> Если змейка врежется в красную линию или сама в себя, то игра будет занончена, вне взависимости от
+          наличия дополнительных жизней. Они помогают только при попадании на красную ячейку</p>
+        <p> Игру можно поставить на паузу нажав кнопку пробел, но предварительно убедитесь
+          что курсор мыши не направлен на кнопку новая игра, или на выбор сложности,
+           иначе в некоторых браузерах возможно некорректное поведение
+        </p>
+       </div>
+      <div class="display forScore">Колличество очков: 0</div>
+      <div class="display forLife">Колличество жизней: 0</div>
+    </nav>
+
+    <div class="container">
+      <div class="cube cube-animation">
+        <div class="side front"></div>
+        <div class="side back"></div>
+        <div class="side left"></div>
+        <div class="side right"></div>
+        <div class="side top"></div>
+        <div class="side bottom"></div>
+      </div>
+    </div>
+<script src = 'cube.js'> </script>
+<script src = 'game.js'> </script>
+  </body>
+</html>

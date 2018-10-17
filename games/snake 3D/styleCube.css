@@ -1,0 +1,109 @@
+*{
+  box-sizing:border-box;
+}
+body{
+  background-color: rgba(001,001,001, .85);
+}
+.container{
+position:relative;
+width:303px;
+height:303px;
+margin:200px auto;
+perspective:700px; /* Создаёт 3д пространство для дочерних элементов */
+-moz-perspective:700px;
+-webkit-perspective:700px;
+-ms-perspective:700px;
+-o-perspective:700px;
+color:white;
+}
+.cube{
+  width:inherit;
+  height:inherit;
+  transform-style: preserve-3d; /*чтобы 3д пространство распостронялось и на дочерние элемента куба*/
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+}
+/* .cube-animation{
+  animation: move 45s linear infinite running ;
+} */
+/* .cube-animation:hover {
+  animation:none;
+}
+@keyframes move{
+  0%{transform:rotateX(0deg) rotateY(0deg)}
+  11%{transform:rotateX(40deg) rotateY(40deg)}
+  22%{transform:rotateX(80deg) rotateY(80deg)}
+  33%{transform:rotateX(120deg) rotateY(120deg)}
+  44%{transform:rotateX(160deg) rotateY(160deg)}
+  55%{transform:rotateX(200deg) rotateY(200deg)}
+  66%{transform:rotateX(240deg) rotateY(240deg)}
+  77%{transform:rotateX(280deg) rotateY(280deg)}
+  88%{transform:rotateX(320deg) rotateY(320deg)}
+  100%{transform:rotateX(360deg) rotateY(360deg)}
+} */
+
+.side{
+  position:absolute;
+  width:inherit;
+  height:inherit;
+  border: 2px solid #fff;
+  backface-visibility: hidden; /* скрывает внутреннюю сторону*/
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+}
+.front{
+  transform:translateZ(150px);
+  -moz-transform:translateZ(150px);
+  -webkit-transform:translateZ(150px);
+  -ms-transform:translateZ(150px);
+  -o-transform:translateZ(150px);
+}
+.back{
+  transform:rotateY(180deg) rotate(180deg) translateZ(150px);
+  -moz-transform:rotateY(180deg) rotate(180deg) translateZ(150px);
+  -webkit-transform:rotateY(180deg) rotate(180deg) translateZ(150px);
+  -ms-transform:rotateY(180deg) rotate(180deg) translateZ(150px);
+  -o-transform:rotateY(180deg) rotate(180deg) translateZ(150px);
+}
+
+.reverseForBack{
+  transform:rotateY(180deg) rotate(0deg) translateZ(150px);
+  -moz-transform:rotateY(180deg) rotate(0deg) translateZ(150px);
+  -webkit-transform:rotateY(180deg) rotate(0deg) translateZ(150px);
+  -ms-transform:rotateY(180deg) rotate(0deg) translateZ(150px);
+  -o-transform:rotateY(180deg) rotate(0deg) translateZ(150px);
+}
+
+
+.right{
+  transform:rotateY(90deg) translateZ(150px);
+  -moz-transform:rotateY(90deg) translateZ(150px);
+  -webkit-transform:rotateY(90deg) translateZ(150px);
+  -ms-transform:rotateY(90deg) translateZ(150px);
+  -o-transform:rotateY(90deg) translateZ(150px);
+}
+.left{
+  transform:rotateY(-90deg) translateZ(150px);
+  -moz-transform:rotateY(-90deg) translateZ(150px);
+  -webkit-transform:rotateY(-90deg) translateZ(150px);
+  -ms-transform:rotateY(-90deg) translateZ(150px);
+  -o-transform:rotateY(-90deg) translateZ(150px);
+}
+.top{
+  transform:rotateX(90deg) translateZ(150px);
+  -moz-transform:rotateX(90deg) translateZ(150px);
+  -webkit-transform:rotateX(90deg) translateZ(150px);
+  -ms-transform:rotateX(90deg) translateZ(150px);
+  -o-transform:rotateX(90deg) translateZ(150px);
+}
+.bottom{
+  transform:rotateX(-90deg) translateZ(150px);
+  -moz-transform:rotateX(-90deg) translateZ(150px);
+  -webkit-transform:rotateX(-90deg) translateZ(150px);
+  -ms-transform:rotateX(-90deg) translateZ(150px);
+  -o-transform:rotateX(-90deg) translateZ(150px);
+}
