@@ -1,0 +1,277 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+  }
+label{
+  cursor:pointer;
+  }
+
+
+                                                 /*__HEADER__*/
+
+.password{
+  text-align: center;
+}
+.password p{
+  margin-top: 30px;
+}
+.password input{
+  margin:10px;
+}
+.butttonPass:hover{
+  cursor:pointer;
+}
+
+
+                                                              /* heading */
+header .heading{
+  position:absolute;
+  width:100%;
+  text-align: center;
+  margin-top:10%;
+}
+header .heading h1{
+  letter-spacing: 10px;
+  color:#fff;
+}
+
+                                                    /* image for background */
+header .image_for_background{
+  background-color:rgba(999,999,999, 0.3);
+}
+header img{
+  width:100%;
+  z-index: -100;
+  position:relative;
+}
+
+
+
+                                                              /* __CONTENT__ */
+#hello_admin{
+  margin:20px;
+  text-align: center;
+  color: rgba(17,17,17, 0.9);
+  font-weight: normal;
+  font-size: 200%;
+}
+h3{
+  margin:20px;
+  color: rgba(17,17,17, 0.9);
+  font-weight: normal;
+  font-size: 150%;
+}
+.main{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  padding:20px;
+}
+.content{
+  flex:4;
+  order:2;
+  min-width:644px;
+  padding:0 10px;
+}
+
+
+fieldset{
+  padding:20px;
+}
+fieldset form p, fieldset p a{
+line-height: 40px;
+color:rgba(17,17,17, 0.8);
+font-size: 110%;
+}
+fieldset p a:hover{
+border-bottom:1px solid rgba(17,17,17, 0.8);
+}
+textarea{
+  padding:5px;
+}
+input{
+  width: 250px;
+  height: 25px;
+  padding: 2px;
+  font-size: 80%;
+}
+.radio{
+  width:40px;
+}
+select{
+  width:270px;
+  height:40px;
+  font-size:80%;
+  margin-left:-3px;
+}
+.submit{
+  height: 35px;
+  background-color: red;
+  color:#fff;
+  margin:20px 0;
+  border-radius:20px;
+  cursor:pointer;
+  box-shadow:-5px 5px 8px rgba(17,17,17, 0.7);
+  transition:all 0.5s;
+}
+.submit:hover{
+  box-shadow:-2px 1px 2px rgba(17,17,17, 0.7);
+  transition:all 0.5s;
+}
+
+
+                                                              /* __SIDEBAR__ */
+
+.sidebar{
+  flex:1;
+  order:3;
+  min-width:300px;
+  padding:0 10px;
+  text-align:center;
+}
+.sidebar nav{
+  margin:50px 0;
+}
+.sidebar h3{
+  color:rgba(17,17,17, 0.8);
+  padding-bottom:5px;
+  border-bottom:2px solid rgba(17,17,17, 0.8);
+}
+.sidebar ul{
+  margin:20px 0;
+}
+.sidebar nav ul li{
+  line-height: 40px;
+}
+.sidebar nav ul li.last_note{
+  line-height: 20px;
+  margin: 15px 0;
+}
+.sidebar nav ul li.last_note{
+  font-size: 80%;
+  color:rgba(17,17,17, 0.4);
+}
+.sidebar nav ul li a:hover{
+border-bottom:1px solid rgba(17,17,17, 0.8);
+}
+.sidebar p, .sidebar a{
+  color:rgba(17,17,17, 0.6);
+}
+
+
+
+
+
+                                                              /* __FOOTER__ */
+
+  footer{
+    min-height: 200px;
+    width: 100%;
+    border-top: 1px solid rgba(17,17,17, 0.4);
+  }
+
+
+                                                            /* МЕДИА ЗАПРОСЫ */
+
+@media screen and (max-width:1150px){
+.head_menu ul li a{
+  letter-spacing: 2px;
+  }
+  .head_menu ul li{
+    width:15%;
+  }
+}
+@media screen and (max-width:1023px){
+  .sidebar{
+    order:1;
+  }
+  .mini_accordion{
+    max-width: 400px;
+    margin:0 auto;
+  }
+  .new_comment, .comment{
+    width:80%;
+    margin:80px auto;
+  }
+}
+@media screen and (max-width:822px){
+  .foot .two{
+    order:1;
+  }
+  .content{
+    min-width:100%;
+  }
+  header .heading h2{
+    font-size:100%;
+  }
+}
+@media screen and (max-width:650px){
+  .head_menu ul li{
+    display:block;
+    margin:2% auto;
+    width:45%;
+  }
+  .head_menu{
+    top:8%;
+  }
+  header .heading{
+    margin-top:0;
+  }
+  header .heading h2{
+    font-size:60%;
+    letter-spacing:5px;
+    margin-top:1%;
+    margin-bottom:2%;
+  }
+  .callback #text_sender{
+    width:360px;
+  }
+  .callback #wrapper_for_h3{
+    padding: 0;
+  }
+  .img_in_container{
+    float:none;
+  }
+  section {
+    text-align: center;
+  }
+  .comment .date_comment{
+    float:none;
+  }
+
+}
+@media screen and (max-width:390px){
+  .main{
+    padding:0;
+  }
+  section{
+    padding:30px 0;
+  }
+  .content{
+    padding: 0;
+  }
+  .more_info{
+    padding: 0;
+  }
+  .img_in_container{
+    margin:0 0 20px 0;
+  }
+  .head_menu{
+    top:6%;
+  }
+  .head_menu ul li{
+    margin:2px auto;
+  }
+  article{
+    padding: 5px;
+  }
+  .callback #text_sender{
+    width:280px;
+  }
+}
