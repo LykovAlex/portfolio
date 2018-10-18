@@ -105,9 +105,8 @@ ul li{
   border-radius: 5px;
 }
 .life{
-  background-color: blue;
-  border-radius: 10px;
   animation: move3 2s linear infinite;
+  background-image: url(image/heart.png);
 }
 @keyframes move3 {
   0% {transform: scale(1.5)}
@@ -121,8 +120,9 @@ ul li{
 }
 
 .goodFood{
-  background-color: yellow;
-  border-radius: 10px;
+  background-image: url(image/apple.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   animation: move1 2s linear;
 }
 @keyframes move1 {
@@ -140,8 +140,9 @@ ul li{
 }
 
 .badFood{
-  background-color: red;
-  border-radius: 10px;
+  background-image: url(image/toadstool.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   animation: move2 2s linear;
 }
 @keyframes move2 {
